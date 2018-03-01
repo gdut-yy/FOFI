@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+// 添加插件
+apply plugin: "com.mob.sdk"
+
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "245ac994b10b7"
+    appSecret "fe5a621c1832dbf26d33ab4db6768db3"
+
+    SMSSDK {}
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "net.fofi.app"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // butterknife 框架
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // umeng 集成友盟SDK
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    // glide 框架
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    // recyclerview、v4包 和 v13包,注意版本一致
+    implementation 'com.android.support:recyclerview-v7:27.0.0'
+    compile 'com.android.support:support-v4:27.0.0'
+    compile 'com.android.support:support-v13:27.0.0'
+    // gson
+    compile 'com.google.code.gson:gson:2.8.2'
+    // 网络封装类 okhttp 与 retrofit
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+}

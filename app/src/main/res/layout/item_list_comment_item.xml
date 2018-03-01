@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_material"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/lay_16"
+    android:paddingTop="@dimen/lay_16">
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="@dimen/lay_8"
+        android:layout_marginRight="@dimen/lay_8"
+        android:contentDescription="@string/comment_hint"
+        android:src="@mipmap/ic_comment_40_pressed" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复制"
+        android:textColor="#111111"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">FOFI</string>
+
+    <!--新版登录专用-->
+    <string name="login_input_username_hint">手机号或邮箱</string>
+    <string name="login_input_username_hint_error">请输入正确的手机号或邮箱&#8230;</string>
+    <string name="login_hold_hint">记住密码</string>
+    <string name="login_forget_hint">忘记密码？</string>
+    <string name="login_register_hint">注册</string>
+    <string name="login_other_hint">其他方式登录</string>
+    <string name="register_input_username_hint">手机号</string>
+    <string name="register_username_hint">用户名</string>
+    <string name="register_sms_auth_code">短信验证码</string>
+    <string name="register_sms_hint">获取验证码</string>
+    <string name="register_sms_wait_hint">别激动,休息一下呗&#8230;</string>
+    <string name="loading_image">正在准备图片...</string>
+    <string name="register_done_hint">完成</string>
+    <string name="register_man_hint">男士</string>
+    <string name="register_female_hint">女士</string>
+    <string name="retrieve_pwd_step_hint">下一步</string>
+    <string name="retrieve_pwd_email_label_one">邮箱用户找回密码，请</string>
+    <string name="retrieve_pwd_email_label"><a>点击这里</a></string>
+    <string name="reset_pwd_hint">请输入至少六位新密码</string>
+    <string name="register_username_error">用户名太长&#8230;</string>
+    <string name="hint_password">密码</string>
+    <string name="register_pwd_hint">请输入至少六位数密码</string>
+    <string name="hint_username_ok">请输入正确的手机号码</string>
+    <string name="user_hint_login">点击头像登录</string>
+    <string name="reset_pwd_label">重置密码</string>
+    <string name="retrieve_pwd_label">找回密码</string>
+    <string name="reset_pwd_submit">确认</string>
+    <string name="request_error_hint">网络请求失败,请重试&#8230;</string>
+    <string name="login_success_hint">登录成功</string>
+    <string name="send_sms_code_success_hint">已成功发送验证码</string>
+    <string name="reset_success_hint">密码重置成功</string>
+    <string name="register_success_hint">注册成功</string>
+    <string name="share_hint">抱歉,您未安装该应用,不能分享&#8230;</string>
+    <string name="login_hint">抱歉,您未安装该应用,不能登录&#8230;</string>
+    <string name="login_wechat_hint">正在启动微信中&#8230;</string>
+    <string name="login_tencent_hint">正在启动QQ中&#8230;</string>
+    <string name="login_weibo_hint">正在启动微博中&#8230;</string>
+    <string name="message_pwd_error">密码错误</string>
+    <string name="message_username_null">用户名未填写！！！</string>
+    <string name="tv_my_score">积分 0</string>
+    <string name="zero">0</string>
+
+    <string name="login">登录</string>
+
+    <string name="progress_submit">正在提交…</string>
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+
+    <!--新版评论专用-->
+    <string name="about_comment_hint">相关评论</string>
+    <string name="view_more_hint">更多评论</string>
+    <string name="send_tweet">转发到动弹</string>
+    <string name="send_hint">发送</string>
+    <string name="comment_hint">请输入评论</string>
+    <string name="hot_comment_hint">热门评论</string>
+    <string name="pub_comment_hint">发表评论</string>
+    <string name="pub_comment_success">评论成功</string>
+    <string name="pub_comment_failed">评论失败</string>
+    <string name="add_comment_hint">添加评论</string>
+    <string name="comment_title_hint">评论</string>
+    <string name="item_hint">条</string>
+    <string name="floor_hint">楼</string>
+    <string name="reply_hint">回复:</string>
+    <string name="answer_hint">回答</string>
+    <string name="pub_about">发布于</string>
+    <string name="back_hint">返回</string>
+    <string name="martian_hint">火星网友</string>
+
+    <string name="footer_type_net_error">网络错误</string>
+    <string name="tip_network_error">没有可用的网络</string>
+</resources>
