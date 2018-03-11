@@ -3,7 +3,7 @@
 
 
 ![](logo2.png)
-##FOFI v1.0.1
+## FOFI v1.0.1
 
 
 FOFI是一款24小时话题 + 匿名聊天评论的社交类APP。利用此应用程序，用户可以发布、阅读他人发出的话题室，并参与其中，同时也可以通过各大社交平台转发自己发布或正在阅读的话题，邀请其他人参与话题讨论。在这里，话题的生命周期只有24小时，用户更可以畅所欲言，尽情享受这不同话题、不同参与者所带来的独特氛围的24小时美好时光。
@@ -25,7 +25,7 @@ FOFI是一款24小时话题 + 匿名聊天评论的社交类APP。利用此应�
 3. Gradle Plugin Version: 3.0.1
 4. SDK Tool >= 27.0.3
 
-##相关依赖
+## 相关依赖
 
 - **com.android.support**：Google官方适配包，用于提供卡片、列表、主题等基础模块
 - **okhttp**：网络框架
@@ -34,7 +34,7 @@ FOFI是一款24小时话题 + 匿名聊天评论的社交类APP。利用此应�
 - **com.github.bumptech.glide**：所有的图片请求管理库
 - **com.google.code.gson**：Json-Model解析库
 
-##系统设计
+## 系统设计
 
 - App与App后台通信模式：HTTP/HTTPS
 - Android注解框架：ButterKnife
