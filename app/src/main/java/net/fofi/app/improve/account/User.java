@@ -1,10 +1,12 @@
 package net.fofi.app.improve.account;
 
+import java.io.Serializable;
+
 /**
  * Created by ZYY on 2018/2/27.
  */
 
-public class User {
+public class User implements Serializable{
     private Long id;
     private String telephone;
     private String password;
@@ -49,5 +51,10 @@ public class User {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString( ) {
+        return super.toString();
     }
 }

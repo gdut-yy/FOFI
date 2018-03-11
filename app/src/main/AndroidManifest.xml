@@ -7,10 +7,21 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
 
 
-    <application
+    <application xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:name"
+        android:name=".mobim.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -72,6 +83,59 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <!-- 新账户中心模块完 -->
+
+        <activity
+            android:name=".mobim.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".mobim.ui.UpdateUserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.GroupPickUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.UserSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".mobim.ui.GroupListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.GroupSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".mobim.ui.GroupCreateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".mobim.ui.GroupAddUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".mobim.ui.ReminderListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.ChatDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.ReminderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.UserDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.ImagePickerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mobim.ui.InputForResultActivity"
+            android:screenOrientation="portrait"/>
+
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="5a93bf63f43e4878cf0001c5" />

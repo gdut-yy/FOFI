@@ -99,4 +99,13 @@
         <attr name="max_count" format="integer" />
         <attr name="is_show_count" format="boolean" />
     </declare-styleable>
+
+    <!---->
+    <declare-styleable name="PieView">
+        <attr name="percentage" format="float" />
+        <attr name="percentage_size" format="integer" />
+        <attr name="inner_pie_padding" format="integer" />
+        <attr name="inner_text_visibility" format="boolean" />
+        <attr name="inner_text" format="string" />
+    </declare-styleable>
 </resources>

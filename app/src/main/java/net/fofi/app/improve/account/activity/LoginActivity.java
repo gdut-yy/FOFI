@@ -1,13 +1,5 @@
 package net.fofi.app.improve.account.activity;
 
-import net.fofi.app.R;
-import net.fofi.app.api.RetrofitHelper;
-import net.fofi.app.api.remote.FOFIApi;
-import net.fofi.app.improve.account.User;
-import net.fofi.app.improve.account.base.AccountBaseActivity;
-import net.fofi.app.improve.account.constants.UserConstants;
-import net.fofi.app.util.TDevice;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -32,6 +24,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import net.fofi.app.R;
+import net.fofi.app.api.RetrofitHelper;
+import net.fofi.app.api.remote.FOFIApi;
+import net.fofi.app.improve.account.User;
+import net.fofi.app.improve.account.base.AccountBaseActivity;
+import net.fofi.app.improve.account.constants.UserConstants;
+import net.fofi.app.mobim.ui.MainActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -447,7 +447,11 @@ public class LoginActivity extends AccountBaseActivity implements View.OnClickLi
             public void onResponse(Call<User> call, Response<User> response) {
                 Log.d("Login", "登录成功");
                 user = response.body();
-                Log.d("Login", "手机号密码-"+user.getTelephone()+user.getPassword());
+                // 跳转
+                MainActivity.show(LoginActivity.this, user);
+
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
             }
 
             // 请求失败时候的回调

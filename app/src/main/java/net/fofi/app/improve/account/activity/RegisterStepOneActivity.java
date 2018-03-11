@@ -29,10 +29,8 @@ import net.fofi.app.R;
 import net.fofi.app.api.RetrofitHelper;
 import net.fofi.app.api.remote.FOFIApi;
 import net.fofi.app.improve.account.User;
-import net.fofi.app.improve.account.Users;
 import net.fofi.app.improve.account.base.AccountBaseActivity;
 import net.fofi.app.improve.utils.parser.RichTextParser;
-import net.fofi.app.util.TDevice;
 
 import butterknife.BindView;
 import butterknife.OnClick;

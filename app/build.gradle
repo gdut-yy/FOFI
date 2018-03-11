@@ -9,6 +9,7 @@ MobSDK {
     appSecret "fe5a621c1832dbf26d33ab4db6768db3"
 
     SMSSDK {}
+    MobIM {}
 }
 
 android {
@@ -44,8 +45,8 @@ dependencies {
     // umeng 集成友盟SDK
     compile 'com.umeng.analytics:analytics:latest.integration'
     // glide 框架
-    implementation 'com.github.bumptech.glide:glide:4.6.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
     // recyclerview、v4包 和 v13包,注意版本一致
     implementation 'com.android.support:recyclerview-v7:27.0.0'
     compile 'com.android.support:support-v4:27.0.0'

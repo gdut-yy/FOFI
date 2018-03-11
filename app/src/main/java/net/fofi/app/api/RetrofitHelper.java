@@ -12,7 +12,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitHelper {
     // 服务器 Ip 地址
 //    private final static String serverIp= "http://169.254.42.232:9999/";
-    private final static String serverIp= "http://192.168.1.103:9999/";
+    public String IP = "http://10.30.23.123:9999/";
+    private final static String serverIp = "http://10.30.23.123:9999/";
 
     private Retrofit retrofit;
     private FOFIApi fofiApi;
